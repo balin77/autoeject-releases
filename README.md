@@ -1,6 +1,6 @@
-# AutoEject Desktop
+# AutoEject Desktop Releases
 
-Multi-Plate GCODE Post-Processor for Bambu Lab Printers.
+This repository hosts the release binaries for AutoEject Desktop.
 
 ## Download
 
@@ -14,19 +14,12 @@ Download the latest version from the [Releases](https://github.com/balin77/autoe
 - Support for X1, P1, and A1M printers
 - Automatic updates
 
-## Development
+## Installation
 
-```bash
-# Install dependencies
-npm install
+1. Download the latest `.exe` installer from Releases
+2. Run the installer
+3. The app will automatically check for updates on startup
 
-# Run in development mode
-npm run dev
+## Source Code
 
-# Build for production
-npm run build
-```
-
-## License
-
-ISC
+The source code is maintained in a separate repository.
