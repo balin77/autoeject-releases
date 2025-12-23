@@ -1,0 +1,59 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "AutoEject",
+  "version": "3.0.0",
+  "identifier": "com.autoeject.app",
+  "build": {
+    "frontendDist": "../frontend-dist",
+    "beforeDevCommand": "",
+    "beforeBuildCommand": ""
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AutoEject - Multi-Plate GCODE Processor",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 1200,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY1MzY0MjE5NDFBODMxMTQKUldRVU1haEJHVUkyWmN6WnZWalZiVGduNjdlbElJMXFVRkdvY01HVElsSXZsYURVREFIQ3VRMngK",
+      "endpoints": [
+        "https://github.com/balin77/autoeject-releases/releases/latest/download/latest.json"
+      ],
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "AutoEject Team",
+    "copyright": "Copyright © AutoEject Team",
+    "category": "Utility",
+    "shortDescription": "Multi-Plate GCODE Post-Processor for Bambu Lab Printers",
+    "longDescription": "AutoEject is a powerful tool for processing multi-plate 3D printing projects from Bambu Lab and Orca Slicer. It enables automated plate swapping, GCODE optimization, and advanced features for X1, P1, and A1M printers.",
+    "windows": {
+      "nsis": {
+        "installerIcon": "icons/icon.ico"
+      }
+    }
+  }
+}
